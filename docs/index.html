@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>PDF Editor Pro — Descarga para Android</title>
+<meta name="description" content="Descarga PDF Editor Pro para Android: edita, une, dibuja, resalta y firma tus PDFs desde el móvil." />
+<link rel="icon" href="icon.png" />
+<style>
+  :root {
+    --bg: #f4f5f7;
+    --surface: #ffffff;
+    --border: #e2e4e9;
+    --text: #1c1e21;
+    --text-muted: #6b7280;
+    --primary: #4338ca;
+    --primary-hover: #372ea8;
+    --shadow: 0 1px 3px rgba(16,24,40,.08), 0 1px 2px rgba(16,24,40,.06);
+    --shadow-lg: 0 10px 30px rgba(16,24,40,.18);
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; min-height: 100%; background: var(--bg); color: var(--text);
+    font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+  }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 48px 20px 80px; }
+  header { display: flex; align-items: center; gap: 14px; margin-bottom: 36px; }
+  header img { width: 56px; height: 56px; border-radius: 14px; box-shadow: var(--shadow); }
+  header h1 { font-size: 1.3rem; margin: 0; }
+  header p { margin: 2px 0 0; color: var(--text-muted); font-size: .9rem; }
+
+  .hero {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 16px;
+    box-shadow: var(--shadow-lg); padding: 40px 32px; text-align: center; margin-bottom: 28px;
+  }
+  .hero h2 { font-size: 1.7rem; margin: 0 0 10px; }
+  .hero p { color: var(--text-muted); max-width: 520px; margin: 0 auto 28px; line-height: 1.5; }
+
+  .btn-download {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: var(--primary); color: #fff; text-decoration: none;
+    font-weight: 700; font-size: 1.05rem; padding: 16px 32px; border-radius: 12px;
+    box-shadow: var(--shadow-lg); transition: background .15s, transform .05s;
+  }
+  .btn-download:hover { background: var(--primary-hover); }
+  .btn-download:active { transform: translateY(1px); }
+  .version-note { margin-top: 14px; font-size: .82rem; color: var(--text-muted); }
+  .version-note a { color: var(--primary); }
+
+  .qr-block {
+    display: flex; align-items: center; gap: 18px; justify-content: center;
+    margin-top: 32px; padding-top: 28px; border-top: 1px solid var(--border);
+  }
+  .qr-block img { width: 120px; height: 120px; border: 1px solid var(--border); border-radius: 10px; }
+  .qr-text { text-align: left; max-width: 300px; }
+  .qr-text strong { display: block; margin-bottom: 4px; }
+  .qr-text span { color: var(--text-muted); font-size: .85rem; }
+
+  .steps {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 16px;
+    box-shadow: var(--shadow); padding: 28px 32px; margin-bottom: 28px;
+  }
+  .steps h3 { margin-top: 0; font-size: 1.1rem; }
+  .steps ol { margin: 0; padding-left: 22px; color: var(--text-muted); line-height: 1.7; }
+  .steps strong { color: var(--text); }
+
+  .tools {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 16px;
+    box-shadow: var(--shadow); padding: 28px 32px;
+  }
+  .tools h3 { margin-top: 0; font-size: 1.1rem; }
+  .tools ul { margin: 0; padding-left: 22px; color: var(--text-muted); line-height: 1.8; columns: 2; }
+  .tools li::marker { color: var(--primary); }
+
+  footer { text-align: center; margin-top: 36px; color: var(--text-muted); font-size: .85rem; }
+  footer a { color: var(--primary); text-decoration: none; }
+
+  @media (max-width: 560px) {
+    .tools ul { columns: 1; }
+    .qr-block { flex-direction: column; text-align: center; }
+    .qr-text { text-align: center; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <img src="icon.png" alt="Icono de PDF Editor Pro" />
+    <div>
+      <h1>PDF Editor Pro</h1>
+      <p>Versión Android</p>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h2>Edita tus PDFs desde el móvil</h2>
+    <p>
+      Une, reordena, dibuja, resalta, escribe y firma tus PDFs directamente en tu teléfono.
+      Todo se procesa en tu dispositivo: nada se sube a ningún servidor.
+    </p>
+    <a class="btn-download" href="https://github.com/melvinfranco99/pdf-editor-pro-mobile/releases/latest" id="download-btn">
+      ⬇ Descargar APK
+    </a>
+    <p class="version-note">
+      Instala directamente el <code>.apk</code> (fuera de Google Play) · código fuente en
+      <a href="https://github.com/melvinfranco99/pdf-editor-pro-mobile">GitHub</a>
+    </p>
+
+    <div class="qr-block">
+      <img src="qr-download.png" alt="Código QR para descargar la app" />
+      <div class="qr-text">
+        <strong>Escanéalo con tu móvil</strong>
+        <span>Abre la cámara de tu teléfono y apunta al código para ir directo a la página de descarga.</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="steps">
+    <h3>Cómo instalarlo</h3>
+    <ol>
+      <li>Pulsa <strong>Descargar APK</strong> (o escanea el QR) desde tu teléfono Android.</li>
+      <li>Descarga el archivo <code>.apk</code> más reciente de la página de Releases.</li>
+      <li>Android puede avisar de "origen desconocido": es normal al instalar fuera de Google Play. Permite la instalación para continuar.</li>
+      <li>Abre el archivo descargado para instalarlo y listo.</li>
+    </ol>
+  </section>
+
+  <section class="tools">
+    <h3>Qué incluye</h3>
+    <ul>
+      <li>Unir, reordenar y eliminar páginas</li>
+      <li>Escribir texto: mover, redimensionar, grosor y transparencia</li>
+      <li>Dibujar y resaltar libremente, con transparencia ajustable</li>
+      <li>Resaltado recto asistido (clic + Ctrl+flecha en escritorio)</li>
+      <li>Goma de borrar con intensidad progresiva</li>
+      <li>Firmas dibujadas o generadas con tu nombre</li>
+      <li>Deshacer / rehacer</li>
+      <li>Exportar y compartir el PDF final</li>
+    </ul>
+  </section>
+
+  <footer>
+    También disponible como <a href="https://melvinfranco99.github.io/pdf-editor-pro/">web</a> y
+    <a href="https://github.com/melvinfranco99/pdf-editor-pro-desktop">app de escritorio</a>.
+  </footer>
+
+</div>
+</body>
+</html>
