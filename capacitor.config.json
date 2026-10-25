@@ -1,0 +1,8 @@
+{
+  "appId": "com.melvinfranco99.pdfeditorpro",
+  "appName": "PDF Editor Pro",
+  "webDir": "www",
+  "android": {
+    "allowMixedContent": false
+  }
+}

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">PDF Editor Pro</string>
+    <string name="title_activity_main">PDF Editor Pro</string>
+    <string name="package_name">com.melvinfranco99.pdfeditorpro</string>
+    <string name="custom_url_scheme">com.melvinfranco99.pdfeditorpro</string>
+</resources>
